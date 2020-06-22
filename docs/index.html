@@ -12,30 +12,36 @@
     
     <body>
         <header class="header--container" id="header">
-            <nav class="nav"> <a href="#" class="menu-on">       <img class="menu js-menu" src="./bars-solid.svg" alt="menu" title="menu" />     </a> 
-                <ul
-                class="nav__list js-list-menu">
-                    <li> <a class="nav__list--item" href="index.html#about-us" title="Quienes somos">Quienes somos</a> 
-                    </li>
-                    <li> <a class="nav__list--item" href="index.html#principles" title="Valores">Valores</a> 
-                    </li>
-                    <li> <a class="nav__list--item" href="index.html#therapy" title="Terapia">Terapias</a> 
-                    </li>
-                    <li> <a class="nav__list--item" href="index.html#whyTherapy" title="¿Porqué hacer terapia?">¿Por qué hacer terapia?</a> 
-                    </li>
-                    <li> <a class="nav__list--item" href="#" title="Contacto">Contacto</a> 
-                    </li>
+            <div class="header--nav-container">
+                <nav class="nav">
+                    <!-- <a href="#" class="menu-on">       <img class="menu js-menu" src="./bars-solid.svg" alt="menu" title="menu" />     </a> -->
+                     <h2 class="nav__title">Psicología Indra</h2> 
+                    <ul class="nav__list js-list-menu">
+                        <li> <a class="nav__list--item" href="index.html#about-us" title="Quienes somos">Quienes somos</a> 
+                        </li>
+                        <li> <a class="nav__list--item" href="index.html#principles" title="Valores">Valores</a> 
+                        </li>
+                        <li> <a class="nav__list--item" href="index.html#therapy" title="Terapia">Terapias</a> 
+                        </li>
+                        <li> <a class="nav__list--item" href="index.html#whyTherapy" title="¿Porqué hacer terapia?">¿Por qué hacer terapia?</a> 
+                        </li>
+                        <li> <a class="nav__list--item" href="./contact.html" title="Contacto">Contacto</a> 
+                        </li>
                     </ul>
-            </nav>
-             <h2 class="title">Psicología Indra</h2> 
+                </nav>
+            </div>
+            <div class="img-container">
+                <img class="img" src="./assets/images/drop.jpg" alt="foto de portada"
+                title="Psicología Indra" />
+            </div>
         </header>
         <section class="aboutUs">
              <h1 class="aboutUs--title" id="about-us">Quienes Sómos</h1> 
             <aside class="aboutUs--info">
                 <p class="aboutUs--info__text"><span class="aboutUs--info__emphasis">Indrapsicología </span> es un centro
-                    de psicoterapia constituido por dos profesionales (Belén) <span class="aboutUs--info__emphasis">Mª Belén de la Rocha Fernández </span> y
-                    (Manuel o Manolo) <span class="aboutUs--info__emphasis">Manuel A. Ruiz Ruiz. </span>
-
+                    de psicoterapia constituido por dos profesionales <span class="aboutUs--info__emphasis">Mª Belén de la Rocha Fernández </span> y
+                    <span
+                    class="aboutUs--info__emphasis">Manuel A. Ruiz Ruiz.</span>
                 </p>
                 <p class="aboutUs--info__text">Nuestra labor está basada en la creación de un entorno seguro y tranquilo
                     para quienes solicitan nuestra intervención, algo así como la posibilidad
@@ -45,7 +51,7 @@
                     la salida. Buscamos con las personas que se atrevan a ser... hasta dónde
                     ellas quieran llegar. Nosotros vamos a estar ahí para acompañar, orientar,
                     apoyar y confiar en ellas y en sus potencialidades.</p> <a href="about-us.html"
-                class="aboutUs--info__btn">Más información</a> 
+                class="btn">Más información</a>  <a href="contact.html" class="btn">Contacta con nosotros</a> 
             </aside>
             <aside class="aboutUs--us">
                 <article class="aboutUs--us__belen"> <a href="about-us.html#belen"> <img class="aboutUs--us__photo" src="./assets/images/belen.jpg" alt="Belén de la Rocha" title="Belen de la Rocha" /> </a> 
@@ -55,339 +61,104 @@
                 </article>
                 <article class="aboutUs--us__manuel"> <a href="about-us.html#manuel" class="link"> <img class="aboutUs--us__photo" src="./assets/images/manuel.jpg" alt="Manuel Ruiz" title="Manuel Ruiz" /> </a> 
                     <p
-                    class="aboutUs--us__text">Va usté muy cargadoo al ataquerl diodeno no puedor a wan no te digo trigo
-                        por no llamarte Rodrigor te voy a borrar el cerito</p>
+                    class="aboutUs--us__text">"Cuando la situación es buena, disfrútala.
+                        <br />Cuando la situación es mala, transfórmala.
+                        <br />Cuando la situación no puede ser transformada, tranfórmate"</p>
+                        <p class="aboutUs--us__author">-Victor Frankl-</p>
                 </article>
             </aside>
         </section>
         <section class="principles">
             <header class="principles__header-container">
                  <h1 class="principles__header-container--title" id="principles">Valores</h1> 
-                 <h3 class="principles__header-container--subtitle">En INDRA nos distinguimos por nuestros valores.</h3> 
-                <p class="principles__header-container--text">Se trata de Valores que nos hacen vivir de un modo genuino y personal.
-                    Así las atenciones que desarrollamos en nuestro centro resultan cálidas,
-                    cercanas y de compromiso.</p>
             </header>
-            <div class="principles__card">
-                <div class="principles__card--container">
-                     <h4 class="principles__card--container__title">Valores profesionales</h4> 
-                    <img class="principles__card--container__icon" src="./user-tie-solid.svg"
-                    alt="icono de valores profesionales" title="valores profesionales" />
+            <section class="principles__cards--container">
+                <div class="principles__card">
+                    <div class="principles__card--container">
+                         <h4 class="principles__card--container__title">Compromisos</h4> 
+                        <img class="principles__card--container__icon" src="./handshake-regular.svg"
+                        alt="icono de valores profesionales" title="valores profesionales" />
+                    </div>
+                    <p class="principles__card--text">Consideramos que lo que nos distingue es la vocación.</p>
+                    <p class="principles__card--text">Compromiso con las personas, con sus valores, creencias y diferencias
+                        culturales.</p>
+                    <p class="principles__card--text">Compromiso con la Psicología y la Psicoterapia como ciencias al servicio
+                        del crecimiento del ser humano.</p>
+                    <p class="principles__card--text">Compromiso con nuestra población de la sierra noroeste de Madrid, apostando
+                        por la mejora de su salud mental desde hace más de 20 años.</p>
                 </div>
-                <p class="principles__card--text">Profesionalidad en las intervenciones, avalada por un compromiso con la
-                    formación constante y el objetivo de conseguir la excelencia en la atención
-                    psicoterapéutica.</p>
-                <p class="principles__card--text">El trabajo en equipo en el que la complementariedad, la comunicación y
-                    la confianza son las bases de un equipo terapéutico sólido y consolidado.</p>
-                <p
-                class="principles__card--text">Apertura disciplinar tanto en el ámbito de la Psicología como de la Psicoterapia.
-                    Poseemos formación en escuelas como el modelo Humanista y el Familiar-Sistémico,
-                    sin que nos guste encasillarnos. Nos debemos a las personas y con ellas
-                    formamos equipos para una mejor atención.</p>
-            </div>
-            <div class="principles__card">
-                <div class="principles__card--container">
-                     <h4 class="principles__card--container__title">Valores humanos</h4> 
-                    <img class="principles__card--container__icon" src="./hand-holding-heart-solid.svg"
-                    alt="icono de valores profesionales" title="valores profesionales" />
-                </div>
-                <p class="principles__card--text">La calidez en el trato nos parece fundamental cuando el sufrimiento es
-                    el vehículo que nos acerca a las personas que buscan nuestra atención.</p>
-                <p
-                class="principles__card--text">Confianza: confiamos y creemos en las personas. Creemos en las potencialidades
-                    de las mismas y que, juntos, podemos encontrar los modos de crecer, cambiar
-                    y evolucionar transformando los sufrimientos en oportunidades para ello.</p>
+                <div class="principles__card">
+                    <div class="principles__card--container">
+                         <h4 class="principles__card--container__title">Valores profesionales</h4> 
+                        <img class="principles__card--container__icon" src="./user-tie-solid.svg"
+                        alt="icono de valores profesionales" title="valores profesionales" />
+                    </div>
+                    <p class="principles__card--text">Profesionalidad en las intervenciones, avalada por un compromiso con la
+                        formación constante y el objetivo de conseguir la excelencia en la atención
+                        psicoterapéutica.</p>
+                    <p class="principles__card--text">El trabajo conjunto en el que la complementariedad, la comunicación y
+                        la confianza son las bases de un equipo terapéutico sólido y consolidado.</p>
                     <p
-                    class="principles__card--text">Apoyo y aceptación incondicional: creer y apostar por las personas nos
-                        lleva a aceptarlas incondicionalmente. Creemos que el terapeuta puede ser
-                        “ese otro” que ayude a reconstruir aquellos aspectos tocados o truncados
-                        en las personas que atendemos, incluso a recomponer esos “girones” que
-                        a veces quedan tras “la batalla”.</p>
-                        <p class="principles__card--text">Diálogo y comunicación: la flexibilidad, la escucha activa y la “tertulia
-                            terapéutica” en torno a un café o un té compartidos.</p>
-            </div>
-            <div class="principles__card">
-                <div class="principles__card--container">
-                     <h4 class="principles__card--container__title">Compromisos</h4> 
-                    <img class="principles__card--container__icon" src="./handshake-regular.svg"
-                    alt="icono de valores profesionales" title="valores profesionales" />
+                    class="principles__card--text">Apertura disciplinar tanto en el ámbito de la Psicología como de la Psicoterapia.
+                        Poseemos formación en escuelas como el modelo Humanista y el Familiar-Sistémico,
+                        entre otros, sin que nos guste encasillarnos. Nos debemos a las personas
+                        y con ellas formamos equipos para una mejor atención.</p>
                 </div>
-                <p class="principles__card--text">Consideramos que lo que nos distingue es la vocación.</p>
-                <p class="principles__card--text">Compromiso con las personas, con sus valores, creencias y diferencias
-                    culturales.</p>
-                <p class="principles__card--text">Compromiso con la Psicología y la Psicoterapia como ciencias al servicio
-                    del crecimiento del ser humano.</p>
-                <p class="principles__card--text">Compromiso con nuestra población de Collado Villalba, apostando por la
-                    mejora de su salud mental desde hace más de 20 años.</p>
-            </div>
+                <div class="principles__card">
+                    <div class="principles__card--container">
+                         <h4 class="principles__card--container__title">Valores humanos</h4> 
+                        <img class="principles__card--container__icon" src="./hand-holding-heart-solid.svg"
+                        alt="icono de valores profesionales" title="valores profesionales" />
+                    </div>
+                    <p class="principles__card--text">La calidez en el trato nos parece fundamental cuando el sufrimiento es
+                        el vehículo que nos acerca a las personas que buscan nuestra atención.</p>
+                    <p
+                    class="principles__card--text">Confianza: confiamos y creemos en las personas. Creemos en las potencialidades
+                        de las mismas y que, juntos, podemos encontrar los modos de crecer, cambiar
+                        y evolucionar transformando los sufrimientos en oportunidades para ello.</p>
+                        <p
+                        class="principles__card--text">Apoyo y aceptación incondicional: creer y apostar por las personas nos
+                            lleva a aceptarlas incondicionalmente. Creemos que el terapeuta puede ser
+                            “ese otro” que ayude a reconstruir aquellos aspectos tocados o truncados
+                            en las personas que atendemos, incluso a recomponer esos “girones” que
+                            a veces quedan tras “la batalla”.</p>
+                            <p class="principles__card--text">Diálogo y comunicación: la flexibilidad, la escucha activa y la “tertulia
+                                terapéutica” en torno a un café o un té compartidos.</p>
+                </div>
+                <div class="principles__card">
+                    <div class="principles__card--container">
+                         <h4 class="principles__card--container__title">Filosofía del acompañar</h4> 
+                        <img class="principles__card--container__icon" src="./thinking.svg" alt="icono de filosofía del acompañar"
+                        title="Filosofía del acompañar" />
+                    </div>
+                    <ul class="principles__card--list">
+                        <li class="principles__card--list__item">"Se trata de estar presente para el dolor de otra persona, no de hacer
+                            que su dolor desaparezca.</li>
+                        <li class="principles__card--list__item">Se trata de ir al desierto del alma con otro ser humano, no de creer que
+                            somos responsables de encontrar la salida.</li>
+                        <li class="principles__card--list__item">Se trata de honrar el espíritu, no de enfocarse en el intelecto.</li>
+                        <li
+                        class="principles__card--list__item">Se trata de escuchar el corazón, no de analizar la cabeza.</li>
+                            <li class="principles__card--list__item">Es dar testimonio de las luchas de los otros, no de juzgar ni dirigir
+                                las luchas.</li>
+                            <li class="principles__card--list__item">De caminar al lado, no de conducir o ser conducido.</li>
+                            <li class="principles__card--list__item">De descubrir los dones del silencio sagrado, no significa llenar con palabras
+                                cada momento.</li>
+                            <li class="principles__card--list__item">Se trata de quedarse quieto y en silencio, no de quererse mover frenéticamente
+                                hacia adelante.</li>
+                            <li class="principles__card--list__item">De respetar el desorden y la confusión, no de imponer orden y lógica.</li>
+                            <li
+                            class="principles__card--list__item">De aprender de otros, no de enseñarles.</li>
+                                <li class="principles__card--list__item">De tener una actitud de curiosidad, no de expertos."</li>
+                    </ul>
+                </div>
+            </section>
         </section>
         <section class="therapy" id="therapy">
              <h1 class="therapy--title">Terapias</h1> 
-            <div class="cards">
-                <!-- Terapia infantil -->
-                <article class="card-container">
-                    <div class="js-show-modal">
-                         <h2 class="card-container__title">Infantil</h2> 
-                        <img class="card-container__img" src="./assets/images/transgeneracional.jpeg"
-                        alt="foto de terapia infantil" title="Terapia infantil" />
-                    </div>
-                    <aside class="js-modal-container modal-container">
-                         <h2 class="modal-container__title">Terapia infantil</h2> 
-                        <p class="modal-container__text">Los menores presentan las mismas dificultades que los adultos, salvo que
-                            sus manifestaciones se hacen en función de los recursos y capacidades propias
-                            de su edad y de su momento evolutivo.</p>
-                        <p class="modal-container__text">Nuestros pequeños se ven sometidos a distintas tensiones que les hacen
-                            sentir malestar que manifiestan con conductas de desorden, agresión, desobediencia,
-                            impulsividad….tanto en casa, como en el colegio o con sus iguales. Su desarrollo
-                            personal y académico puede verse afectado si no atendemos estas señales.</p>
-                        <p
-                        class="modal-container__text">En ocasiones, la intervención pasa por pautas que os ayudan a los padres
-                            a resolver el problema sin la necesidad de que el niño acuda a sesiones
-                            individuales. En otras, es necesario iniciar un trabajo de evaluación y
-                            diseño de tratamiento más específico para la situación conflictiva del
-                            menor.</p>
-                            <p class="modal-container__text">El trabajo con los padres, formando “equipo terapéutico”,es muy importante
-                                para poder ayudarle, junto con la coordinación con el colegio u otros profesionales
-                                si también fuera necesario.</p> <span class="js-modal-container__close modal-container__close">X</span> 
-                    </aside>
-                </article>
-                <!-- Terapia de pareja -->
-                <article class="card-container">
-                    <div class="js-show-modal">
-                         <h2 class="card-container__title">De pareja</h2> 
-                        <img class="card-container__img" src="./assets/images/girasoles.jpeg"
-                        alt="foto de terapia de pareja" title="Terapia de pareja" />
-                    </div>
-                    <aside class="js-modal-container modal-container">
-                         <h2 class="modal-container__title">Terapia de pareja</h2> 
-                        <p class="modal-container__text">Las exigencias a las que nos vemos sometidos en un mundo donde estar formado,
-                            trabajar y ser competitivo, dejar el hogar la mayor parte del día al tiempo
-                            que se ha de llevar, los hijos y su educación (o los no tenidos), la familia
-                            de que procedemos y nuestras inseguridades, pueden producir que el amor,
-                            la ilusión, los proyectos compartidos e individuales y apoyados; se puedan
-                            venir al traste.</p>
-                        <p class="modal-container__text">Os ofrecemos un espacio en el que poder volver a ser tú mismo/a junto
-                            a tu pareja. Sabemos que no resulta sencillo si la relación se ha deteriorado
-                            y se ve amenazada por la ruptura y las pérdidas. En nuestra experiencia,
-                            cambiar la perspectiva de abordaje, una comunicación que aclare las diferencias
-                            y conseguir mirar juntos en la misma dirección, genera el sentimiento y
-                            la certeza de que las segundas oportunidades pueden conseguir algo que
-                            parecía imposible en otros momentos.</p> <span class="js-modal-container__close modal-container__close">X</span> 
-                    </aside>
-                </article>
-                <!-- Terapia de familia -->
-                <article class="card-container">
-                    <div class="js-show-modal">
-                         <h2 class="card-container__title">De familia</h2> 
-                        <img class="card-container__img" src="./assets/images/brotes.jpeg" alt="foto de terapia de familia"
-                        title="Terapia de familia" />
-                    </div>
-                    <aside class="js-modal-container modal-container">
-                         <h2 class="modal-container__title">Terapia de familia</h2> 
-                        <p class="modal-container__text">En las familias, a veces los momentos de transición y los cambios de sus
-                            miembros no son sencillos. Las diferencias generacionales, las pérdidas
-                            y los fracasos pueden requerir una intervención que oriente en encontrar
-                            una dirección, aquella que nos vuelva a hacer sentir que vale la pena seguir
-                            apostando por aquellos con los que mi sentimiento de pertenencia me tiene
-                            que ayudar a ser más yo, no a sentirme fuera de lugar o extraño entre los
-                            míos.</p> <span class="js-modal-container__close modal-container__close">X</span> 
-                    </aside>
-                </article>
-                <!-- Terapia de grupo infantil -->
-                <article class="card-container">
-                    <div class="js-show-modal">
-                         <h2 class="card-container__title">De grupo infantil</h2> 
-                        <img class="card-container__img" src="./assets/images/children.jpg" alt="foto de terapia de grupo en familia"
-                        title="Terapia de grupo en familia" />
-                    </div>
-                    <aside class="js-modal-container modal-container">
-                         <h2 class="modal-container__title">Terapia de grupo infantil</h2> 
-                        <p class="modal-container__text">Siempre que podemos y tenemos la posibilidad de formar un grupo de menores
-                            con edades y /o características similares, os planteamos la terapia grupal
-                            como forma de avanzar en el proceso. Somos lo que somos por la relación
-                            que mantenemos con los demás. Nos formamos y educamos en un entorno social
-                            que necesitamos para nuestro crecimiento emocional. Somos en relación con
-                            un otro.</p>
-                        <p class="modal-container__text">Temas como habilidades sociales, enfrentamiento al estrés, solución de
-                            problemas, técnicas de relajación…son habituales en estas dinámicas.</p>
-                        <span
-                        class="js-modal-container__close modal-container__close">X</span>
-                    </aside>
-                </article>
-                <!-- Terapia asistida por animales -->
-                <article class="card-container">
-                    <div class="js-show-modal">
-                         <h2 class="card-container__title">Asistida por animales</h2> 
-                        <img class="card-container__img" src="./assets/images/girl.jpg" alt="foto de terapia asistida por animales"
-                        title="Terapia asistida por animales" />
-                    </div>
-                    <aside class="js-modal-container modal-container">
-                         <h2 class="modal-container__title">Terapia asistida por animales</h2> 
-                        <p class="modal-container__text">Los animales han formado parte de nuestro sistema de subsistencia alimentaria
-                            y defensiva desde tiempos remotos. Así también se han ido forjando un espacio
-                            de acompañamiento personal a través de la domesticación de ciertas especies.</p>
-                        <p
-                        class="modal-container__text">La comunicación con ellos desde lo no verbal es obvia y disfrutada por
-                            todos aquellos que tenemos en casa animales de compañía.</p>
-                            <p class="modal-container__text">En el ámbito terapéutico entendemos esta expresión como una técnica mas
-                                de apoyo y sostén a nuestros pacientes.</p>
-                            <p class="modal-container__text">Nuestro co-terapeuta "TUSKO" nos tuvo que dejar hace tiempo y en la actualidad
-                                se esta preparando para ello una hermosa mestiza de galgo, "Laiya", que
-                                seguro será la continuidad de esta colaboración.</p> <span class="js-modal-container__close modal-container__close">X</span> 
-                    </aside>
-                </article>
-                <!-- Arte-terapia -->
-                <article class="card-container">
-                    <div class="js-show-modal">
-                         <h2 class="card-container__title">Arte-terapia</h2> 
-                        <img class="card-container__img" src="./assets/images/fantasy.jpg" alt="foto de arte-terapia"
-                        title="Arte-terapia" />
-                    </div>
-                    <aside class="js-modal-container modal-container">
-                         <h2 class="modal-container__title">Arte-terapia</h2> 
-                        <p class="modal-container__text">El ser humano se caracteriza entre otras cosas , por su capacidad de expresión
-                            artística como forma de comunicación.</p>
-                        <p class="modal-container__text">Cuando no llegan las palabras precisas, cuando podemos expresarnos de
-                            otra forma….nuestra capacidad de comunicación se expande.</p> <span class="js-modal-container__close modal-container__close">X</span> 
-                    </aside>
-                </article>
-                <!--Coaching -->
-                <article class="card-container">
-                    <div class="js-show-modal">
-                         <h2 class="card-container__title">Coaching</h2> 
-                        <img class="card-container__img" src="./assets/images/adventure.jpg" alt="foto de coaching"
-                        title="Coaching" />
-                    </div>
-                    <aside class="js-modal-container modal-container">
-                         <h2 class="modal-container__title">Arte-terapia</h2> 
-                        <p class="modal-container__text">Actualizando los recursos disponibles desde distintos modelos de intervención,
-                            ofrecemos esta disciplina de novedosa tendencia.</p>
-                        <p class="modal-container__text">El acompañamiento en el descubrir los propios recursos personales para
-                            enfrentarnos a los retos laborales, personales, familiares…es la base de
-                            esta técnica. Entendemos que nuestra sólida formación psicológica avala
-                            y refuerza la consecución de los objetivos deseados.</p> <span class="js-modal-container__close modal-container__close">X</span> 
-                    </aside>
-                </article>
-                <!-- Terapia Gestalt -->
-                <article class="card-container">
-                    <div class="js-show-modal">
-                         <h2 class="card-container__title">Terapia Gestalt</h2> 
-                        <img class="card-container__img" src="./assets/images/terapia-emdr.jpeg"
-                        alt="foto de terapia Gestalt" title="Terapia Gestalt" />
-                    </div>
-                    <aside class="js-modal-container modal-container">
-                         <h2 class="modal-container__title">Terapia Gestalt</h2> 
-                        <p class="modal-container__text">Desde esta orientación terapéutica psicológica se reconoce el ser y sentir
-                            en relación con un otro, en una dinámica circular, supeditada al acompañamiento
-                            y re-experimentación personal, en el ámbito protegido del espacio de terapia.
-                            En el AQUI y el AHORA del momento presente.</p>
-                        <p class="modal-container__text">En ocasiones, respondemos a patrones aprendidos durante nuestra infancia
-                            y los re-interpretamos independientemente de la realidad externa. Se denominan
-                            patrones conservadores. En el proceso terapéutico se procede a actualizar
-                            esos patrones y favorecer la manifestación de una de las herramientas básicas
-                            del ser humano que es la creatividad.</p>
-                        <p class="modal-container__text">TERAPIA MODERADA POR EMDR.</p>
-                        <p class="modal-container__text">Desde un modelo integrador, añadimos al proceso terapéutico esta potentísima
-                            técnica, actualmente reconocida como altamente eficaz en procesos de trauma.</p>
-                        <p
-                        class="modal-container__text">Es la desensibilización y reprocesamiento de acontecimientos vividos en
-                            nuestra vida, de carácter altamente doloroso, a través del movimiento ocular
-                            (estimulación bilateral cerebral).</p>
-                            <p class="modal-container__text">Organizaciones médicas, como la APA (American Psyquiatric Associaton)
-                                y la OMS (Organización Mundial de la Salud) avalan los resultados en trastornos
-                                por estrés postraumático y cuadros asociados.</p> <span class="js-modal-container__close modal-container__close">X</span> 
-                    </aside>
-                </article>
-                <!-- Terapia gestión de uno mismo en el ámbito laboral -->
-                <article class="card-container">
-                    <div class="js-show-modal">
-                         <h2 class="card-container__title">           <!-- Gestión de uno mismo, -->           ámbito laboral         </h2> 
-                        <img class="card-container__img" src="./assets/images/achive.jpg" alt="foto de gestión de uno mismo, ámbito labora"
-                        title="Gestión de uno mismo, ámbito labora" />
-                    </div>
-                    <aside class="js-modal-container modal-container">
-                         <h2 class="modal-container__title">Gestión de uno mismo, Ámbito labora</h2> 
-                        <p class="modal-container__text">Tanto para jóvenes como para profesionales maduros, no es sencillo desempeñarse
-                            en un mundo tan competitivo. El mundo del trabajo se hace cada vez más
-                            exigente en el que debemos conocer bien nuestra profesión que se ha de
-                            ver enriquecida con conocimiento de otros ámbitos y, más que nunca, se
-                            valoran las competencias profesionales.</p>
-                        <p class="modal-container__text">Te ofrecemos un apoyo y orientación para que te conozcas más y mejor en
-                            el ámbito competencial, para que mejores la seguridad en ti mismo para
-                            tu desempeño profesional y que, tanto si trabajas con personas a tu cargo,
-                            como sólo o para ti; sepas alcanzar un desempeño óptimo disfrutando cada
-                            jornada laboral de lo que haces.</p> <span class="js-modal-container__close modal-container__close">X</span> 
-                    </aside>
-                </article>
-                <!-- Procesos adoptivos -->
-                <article class="card-container">
-                    <div class="js-show-modal">
-                         <h2 class="card-container__title">Procesos adoptivos</h2> 
-                        <img class="card-container__img" src="./assets/images/familia.jpg" alt="foto de procesos adoptivos"
-                        title="Procesos adoptivos" />
-                    </div>
-                    <aside class="js-modal-container modal-container">
-                         <h2 class="modal-container__title">Procesos adoptivos</h2> 
-                        <p class="modal-container__text">Formamos parte de la lista profesional para la adopción internacional
-                            del Colegio Oficial de Psicólogos de Madrid.</p>
-                        <p class="modal-container__text">Desde el año 1999 hemos generado unos 190 informes destinados para la
-                            adopción internacional de menores susceptibles de ser adoptados.</p>
-                        <p
-                        class="modal-container__text">En el ámbito terapéutico hemos visto pasar una generación de quienes fueron
-                            menores adoptados y, a algunos de ellos y a sus familias, les hemos atendido.</p>
-                            <p
-                            class="modal-container__text">Tener una visión del proceso preadoptivo y postadoptivo, nos ayuda a entender
-                                las dificultades de mutua adaptación por las que pasan estas familias.</p>
-                                <span
-                                class="js-modal-container__close modal-container__close">X</span>
-                    </aside>
-                </article>
-                <!-- Formación -->
-                <article class="card-container">
-                    <div class="js-show-modal">
-                         <h2 class="card-container__title">Formación</h2> 
-                        <img class="card-container__img" src="./assets/images/conect.png" alt="foto de formación"
-                        title="Formación" />
-                    </div>
-                    <aside class="js-modal-container modal-container">
-                         <h2 class="modal-container__title">Formación</h2> 
-                        <p class="modal-container__text">Colaboramos desde hace ya diez años como docentes en dos centros de formación
-                            de Terapia Familiar Sistémica. ATENEA e ITAD.</p>
-                        <p class="modal-container__text">Colaborar en la formación integral de profesionales de la atención psicosocial
-                            (psicólogos, psiquiatras, trabajadores sociales y educadores sociales)
-                            nos hace sentir que aportamos un granito de arena entregando algo de lo
-                            que nuestra formación y experiencia profesional desde la intervención nos
-                            entregáis las personas que atendemos, vuestra humanidad. Nosotros la acogemos
-                            y la mostramos con términos técnicos, con herramientas diseñadas y validadas
-                            para el cambio y promovemos intervenciones profesionales desde la aceptación
-                            absoluta e incondicional de las personas y las familias.</p> <span class="js-modal-container__close modal-container__close">X</span> 
-                    </aside>
-                </article>
-                <!-- Talleres -->
-                <article class="card-container">
-                    <div class="js-show-modal">
-                         <h2 class="card-container__title">Talleres</h2> 
-                        <img class="card-container__img" src="./assets/images/procesos-terapia-3.jpeg"
-                        alt="foto de Talleres" title="Talleres" />
-                    </div>
-                    <aside class="js-modal-container modal-container">
-                         <h2 class="modal-container__title">Talleres</h2>  <span class="js-modal-container__close modal-container__close">X</span> 
-                        <ul>
-                            <li>#Bienvenid@Todocambio.com</li>
-                            <li>#Hombres y mujeres maduros.</li>
-                            <li>#Arteterapia.</li>
-                            <li>#Valores para vivir la vida.</li>
-                            <li>#AntelaSoledad.</li>
-                            <li>#Taller de transgresión.</li>
-                            <li>#Preparación post-parto.</li>
-                            <li>#familiafuncional.</li>
-                            <li>#mentoringencompetenciasprofesionales.</li>
-                            <li>#tallerdetransgresiónadolescente.</li>
-                            <li>#adopcióninternacional.</li>
-                        </ul>
-                    </aside>
-                </article>
-            </div>
+            <ul class="cards"></ul>
+            <ul class="more-therapy"></ul>
+            <button type="button" id="add-therpies" class="btn btn-more-therapy">Más terapias</button>
         </section>
         <section class="why-therapy" id="whyTherapy">
              <h1 class="why-therapy--title">¿Por qué hacer terapia?</h1> 
@@ -458,7 +229,7 @@
                     </li>
                     <li> <a class="footer--nav__list--item" href="index.html#whyTherapy" title="¿Porqué hacer terapia?">¿Por qué hacer terapia?</a> 
                     </li>
-                    <li> <a class="footer--nav__list--item" href="#" title="Contacto">Contacto</a> 
+                    <li> <a class="footer--nav__list--item" href="contact.html" title="Contacto">Contacto</a> 
                     </li>
                 </ul>
             </nav>
