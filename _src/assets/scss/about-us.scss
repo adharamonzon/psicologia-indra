@@ -121,3 +121,32 @@
     content: url(../arrow-up-solid.svg);
   }
 }
+
+@media all and (max-width: 930px) {
+  .team__userContainerBelen--img {
+    width: auto;
+    height: 200px;
+  }
+  .team__userContainerManuel--img {
+    width: auto;
+    height: 200px;
+  }
+}
+@media all and (max-width: 600px) {
+  .team__userContainerBelen {
+    flex-direction: column;
+    align-items: center;
+    &--img {
+      width: 200px;
+      height: auto;
+    }
+  }
+  .team__userContainerManuel {
+    flex-direction: column;
+    align-items: center;
+    &--img {
+      width: 200px;
+      height: auto;
+    }
+  }
+}
