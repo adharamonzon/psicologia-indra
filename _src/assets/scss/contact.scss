@@ -1,2 +1,53 @@
 @import 'core/variables';
 @import 'core/reset';
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  &--title {
+    font-family: $titleFont;
+    font-size: $titleSize;
+    margin-bottom: 20px;
+  }
+  &--subtitle {
+    font-family: $titleFont;
+    font-size: $subtitleSize;
+  }
+}
+.main {
+  &--structure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+  }
+  &--data {
+    background-color: rgb(77, 155, 245);
+    padding: 20px;
+    width: 100vw;
+    text-align: center;
+    &__title {
+      font-family: $titleFont;
+      font-size: $subtitleSize;
+      margin-bottom: 5px;
+    }
+    &__text {
+      font-family: $textFont;
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+  }
+  &--contact {
+    margin-top: 20px;
+    width: 600px;
+    display: flex;
+    justify-content: space-between;
+    font-family: $textFont;
+    font-size: 20px;
+    &__data {
+      font-weight: 300;
+    }
+  }
+}
