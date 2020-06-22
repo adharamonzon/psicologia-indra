@@ -1,0 +1,71 @@
+.principles {
+  margin-right: 15px;
+  margin-top: 40px;
+  &__header-container {
+    margin-bottom: 20px;
+    margin-left: $marginLeft;
+    &--title {
+      text-align: center;
+      margin-bottom: 50px;
+      font-family: $titleFont;
+      font-size: $titleSize;
+    }
+    &--subtitle {
+      font-family: $textFont;
+      font-weight: 500;
+      font-size: $subtitleSize;
+    }
+    &--text {
+      font-family: $textFont;
+      text-align: justify;
+      line-height: $lineHeight;
+    }
+  }
+  &__cards--container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 20px;
+    margin-left: 50px;
+  }
+  &__card {
+    flex-direction: column;
+    border: solid 1px rgb(201, 199, 199);
+    border-radius: 15px;
+    box-shadow: 10px 10px 12px -4px rgba(125, 123, 125, 1);
+    margin-right: 30px;
+    padding-bottom: 20px;
+    &--container {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-evenly;
+      &__title {
+        margin: 20px;
+        font-size: 30px;
+        font-family: $titleFont;
+      }
+      &__icon {
+        margin-left: 15px;
+        width: 40px;
+      }
+    }
+    &--text {
+      font-size: 14px;
+      margin-left: 25px;
+      margin-right: 25px;
+      font-family: $textFont;
+      line-height: $lineHeight;
+      text-align: justify;
+    }
+    &--list {
+      list-style: none;
+      margin-left: $marginLeft;
+      margin-right: 30px;
+      padding-bottom: 20px;
+      &__item {
+        font-family: $textFont;
+        line-height: $lineHeight;
+        text-align: justify;
+      }
+    }
+  }
+}

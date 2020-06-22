@@ -1,0 +1,20 @@
+@import 'core/variables';
+@import 'core/reset';
+@import 'components/btn';
+
+@import 'layout/header';
+@import 'layout/about-us';
+@import 'layout/principles';
+@import 'layout/therapy';
+@import 'layout/why-therapy';
+@import 'layout/footer';
+
+.arrow {
+  width: 50px;
+  color: black;
+  padding: 10px;
+  text-decoration: none;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+}

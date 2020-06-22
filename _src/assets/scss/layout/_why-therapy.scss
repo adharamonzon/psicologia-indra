@@ -1,0 +1,18 @@
+.why-therapy {
+  margin: 35px;
+  &--title {
+    font-family: $titleFont;
+    font-size: $titleSize;
+    margin-bottom: 20px;
+  }
+  &--text {
+    font-family: $textFont;
+    font-size: $textSize;
+    line-height: $lineHeight;
+    text-align: justify;
+    &__emphasis {
+      text-decoration: underline;
+      font-weight: bold;
+    }
+  }
+}

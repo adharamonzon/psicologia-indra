@@ -1,0 +1,14 @@
+[
+  {
+    "id": "therapy-1",
+    "title": "Terapia infantil",
+    "image": "../images/transgeneracional.jpeg",
+    "description": "Los menores presentan las mismas dificultades que los adultos, salvo que sus manifestaciones se hacen en función de los recursos y capacidades propias de su edad y de su momento evolutivo. Nuestros pequeños se ven sometidos a distintas tensiones que les hacen sentir malestar que manifiestan con conductas de desorden, agresión, desobediencia, impulsividad….tanto en casa, como en el colegio o con sus iguales. Su desarrollo personal y académico puede verse afectado si no atendemos estas señales. En ocasiones, la intervención pasa por pautas que os ayudan a los padres a resolver el problema sin la necesidad de que el niño acuda a sesiones individuales. En otras, es necesario iniciar un trabajo de evaluación y diseño de tratamiento más específico para la situación conflictiva del menor. El trabajo con los padres, formando “equipo terapéutico”,es muy importante para poder ayudarle, junto con la coordinación con el colegio u otros profesionales si también fuera necesario. "
+  },
+  {
+    "id": "therapy-2",
+    "title": "Terapia de pareja",
+    "image": "../images/transgeneracional.jpeg",
+    "description": "Las exigencias a las que nos vemos sometidos en un mundo donde estar formado, trabajar y ser competitivo, dejar el hogar la mayor parte del día al tiempo que se ha de llevar, los hijos y su educación (o los no tenidos), la familia de que procedemos y nuestras inseguridades, pueden producir que el amor, la ilusión, los proyectos compartidos e individuales y apoyados; se puedan venir al traste. Os ofrecemos un espacio en el que poder volver a ser tú mismo/a junto a tu pareja. Sabemos que no resulta sencillo si la relación se ha deteriorado y se ve amenazada por la ruptura y las pérdidas. En nuestra experiencia, cambiar la perspectiva de abordaje, una comunicación que aclare las diferencias y conseguir mirar juntos en la misma dirección, genera el sentimiento y la certeza de que las segundas oportunidades pueden conseguir algo que parecía imposible en otros momentos."
+  }
+]

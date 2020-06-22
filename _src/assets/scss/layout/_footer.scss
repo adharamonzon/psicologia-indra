@@ -1,0 +1,25 @@
+.footer {
+  background-color: rgb(77, 155, 245);
+  display: flex;
+  justify-content: space-between;
+  &--title {
+    color: whitesmoke;
+    font-family: $titleFont;
+    font-size: $titleSize;
+    margin: 25px;
+  }
+  &--nav {
+    &__list {
+      list-style: none;
+      margin-right: 35px;
+      &--item {
+        text-decoration: none;
+        color: whitesmoke;
+        margin-bottom: 15px;
+        font-family: $textFont;
+        font-size: $textSize;
+        line-height: $lineHeight;
+      }
+    }
+  }
+}

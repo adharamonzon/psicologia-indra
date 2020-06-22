@@ -1,0 +1,98 @@
+.therapy--title {
+  font-size: $titleSize;
+  font-family: $titleFont;
+  margin-bottom: 20px;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 35px;
+  align-items: center;
+  justify-items: center;
+}
+.card {
+  &__title {
+    font-family: $titleFont;
+    font-size: 30px;
+    margin-bottom: 5px;
+    text-align: center;
+    align-content: center;
+  }
+  &__img {
+    width: 300px;
+    height: 170px;
+    justify-self: center;
+    margin-left: 20px;
+    border-radius: 10px;
+  }
+}
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  padding: 15px;
+  left: 30%;
+  top: 20%;
+  width: 600px;
+  height: auto;
+  overflow: auto;
+  background-color: white;
+  box-shadow: 10px 10px 279px 147px rgba(0, 0, 0, 0.75);
+  border-radius: 10px;
+  border: solid 2px rgb(202, 199, 199);
+  &__title {
+    font-family: $titleFont;
+    font-size: $titleSize;
+    margin: 10px;
+    text-align: center;
+  }
+  &__text {
+    margin-bottom: 10px;
+    font-size: $textSize;
+    font-family: $textFont;
+    line-height: 30px;
+  }
+  &__close {
+    font-family: $textFont;
+    color: black;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 28px;
+    font-weight: bolder;
+    cursor: pointer;
+  }
+}
+.btn {
+  margin-top: 25px;
+  margin-left: 110px;
+}
+.show {
+  display: block;
+}
+.more-therapy {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 35px;
+  align-items: center;
+  justify-items: center;
+}
+.more-therapy-card {
+  &__title {
+    font-family: $titleFont;
+    font-size: 30px;
+    margin-bottom: 5px;
+    text-align: center;
+    align-content: center;
+  }
+  &__img {
+    width: 300px;
+    height: 170px;
+    justify-self: center;
+    margin-left: 20px;
+    border-radius: 10px;
+  }
+}
