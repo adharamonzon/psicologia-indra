@@ -9,9 +9,13 @@
     margin: 25px;
   }
   &--nav {
+    width: 700px;
     &__list {
+      display: flex;
+      justify-content: space-around;
       list-style: none;
-      margin-right: 35px;
+      margin-right: 85px;
+      margin-top: 30px;
       &--item {
         text-decoration: none;
         color: whitesmoke;
