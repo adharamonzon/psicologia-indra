@@ -5,7 +5,7 @@ const therapies = [
     id: 'therapy-1',
     title: 'Infantil y juvenil',
     image: './assets/images/transgeneracional.jpeg',
-    description: 'Los menores presentan las mismas dificultades que los adultos, salvo que sus manifestaciones se hacen en función de los recursos y capacidades propias de su edad y de su momento evolutivo. Nuestros pequeños se ven sometidos a distintas tensiones que les hacen sentir malestar que manifiestan con conductas de desorden, agresión, desobediencia, impulsividad….tanto en casa, como en el colegio o con sus iguales. Su desarrollo personal y académico puede verse afectado si no atendemos estas señales. En ocasiones, la intervención pasa por pautas que os ayudan a los padres a resolver el problema sin la necesidad de que el niño acuda a sesiones individuales. En otras, es necesario iniciar un trabajo de evaluación y diseño de tratamiento más específico para la situación conflictiva del menor. El trabajo con los padres, formando “equipo terapéutico”,es muy importante para poder ayudarle, junto con la coordinación con el colegio u otros profesionales si también fuera necesario. ',
+    description: 'Los menores presentan las mismas dificultades que los adultos, salvo que sus manifestaciones se hacen en función de los recursos y capacidades propias de su edad y de su momento evolutivo. Nuestros pequeños se ven sometidos a distintas tensiones que les hacen sentir malestar que manifiestan con conductas de desorden, agresión, desobediencia, impulsividad….tanto en casa, como en el colegio o con sus iguales. Su desarrollo personal y académico puede verse afectado si no atendemos estas señales. En ocasiones, la intervención pasa por pautas que os ayudan a los padres a resolver el problema sin la necesidad de que el niño acuda a sesiones individuales. En otras, es necesario iniciar un trabajo de evaluación y diseño de tratamiento más específico para la situación conflictiva del menor. El trabajo con los padres, formando “equipo terapéutico”,es muy importante para poder ayudarle, junto con la coordinación con el colegio u otros profesionales si también fuera necesario.',
   },
   {
     id: 'therapy-13',
@@ -161,7 +161,7 @@ function showModal(id) {
   modalHTML += `<span class='js-close modal__close' id="btnClose">X</span>`;
   modalHTML += `<h2 class='modal__title'>${modalItem.title}</h2>`;
   modalHTML += `<p class='modal__text'>${modalItem.description}</p>`;
-  modalHTML += `</aside>;`;
+  modalHTML += `</aside>`;
   modal.innerHTML = modalHTML;
   modal.classList.add('show');
   //cerrar la modal a través de la X
