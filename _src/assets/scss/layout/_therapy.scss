@@ -97,3 +97,8 @@
     border-radius: 10px;
   }
 }
+@media all and (max-width: 980px) {
+  .cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}

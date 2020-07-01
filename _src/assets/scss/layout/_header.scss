@@ -1,5 +1,6 @@
 .header--container {
-  height: 110vh;
+  /* 
+  height: 110vh; */
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -36,5 +37,13 @@
         font-size: 20px;
       }
     }
+  }
+}
+@media all and (max-width: 980px) {
+  .img-container {
+    width: 600px;
+  }
+  .img {
+    width: 100%;
   }
 }
