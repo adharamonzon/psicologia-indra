@@ -1,6 +1,7 @@
+.menu-on {
+  display: none;
+}
 .header--container {
-  /* 
-  height: 110vh; */
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -45,5 +46,13 @@
   }
   .img {
     width: 100%;
+  }
+}
+@media all and (max-width: 620px) {
+  .img-container {
+    width: 400px;
+  }
+  .nav {
+    width: 400px;
   }
 }

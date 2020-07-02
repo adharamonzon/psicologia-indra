@@ -27,3 +27,18 @@
     }
   }
 }
+
+@media all and (max-width: 690px) {
+  .footer {
+    &--title {
+      font-size: $subtitleSize;
+    }
+    &--nav {
+      display: block;
+      &__list--item {
+        font-size: 14px;
+        margin-right: 10px;
+      }
+    }
+  }
+}

@@ -58,7 +58,7 @@ const therapies = [
   },
   {
     id: 'therapy-9',
-    title: 'Terapia para el ámbito laboral',
+    title: 'Terapia ámbito laboral',
     image: './assets/images/achive.jpg',
     description: 'Tanto para jóvenes como para profesionales maduros, no es sencillo desempeñarse en un mundo tan competitivo. El mundo del trabajo se hace cada vez más exigente en el que debemos conocer bien nuestra profesión que se ha de ver enriquecida con conocimiento de otros ámbitos y, más que nunca, se valoran las competencias profesionales. Te ofrecemos un apoyo y orientación para que te conozcas más y mejor en el ámbito competencial, para que mejores la seguridad en ti mismo para tu desempeño profesional y que, tanto si trabajas con personas a tu cargo, como sólo o para ti; sepas alcanzar un desempeño óptimo disfrutando cada jornada laboral de lo que haces.',
   },

@@ -102,3 +102,15 @@
     grid-template-columns: 1fr 1fr;
   }
 }
+@media all and (max-width: 980px) {
+  .card {
+    align-items: center;
+    &__title {
+      font-size: $subtitleSize;
+    }
+    &__img {
+      width: 200px;
+      height: 100px;
+    }
+  }
+}
