@@ -12,7 +12,7 @@
       <h1 class="team__title" id="us">
         Sobre nosotros
       </h1>
-      <a href="index.html#team" class="team__btn">
+      <a href="index.html#team" class="back-btn">
         volver
       </a>
       <div class="team__text-container">
@@ -64,7 +64,7 @@
         Manuel A. Ruiz Ruiz
       </h1>
       <div class="team__userContainerManuel">
-        <img class="team__userContainerManuel--img" src="./assets/images/manuel.jpg" alt="fotografía de Manuel" title="Manuel Ruiz" />
+        <img class="team__userContainerManuel--img manuel" src="./assets/images/manuel.jpg" alt="fotografía de Manuel" title="Manuel Ruiz" />
         <div class="team__userContainerManuel--info">
           <p class="team__userContainerManuel--text">Ahora voy a presentaros a Manuel. Es díficil resumir en pocas líneas la concepción de un profesional con sus características…</p>
           <p class="team__userContainerManuel--text">Su formación es exquisita y extensa y sabe ser concienzudamente exigente con cada una de sus intervenciones terapéuticas. Difícil de conquistar en un primer momento, el trato le lleva a dejar aparecer su carácter tranquilo, sensato, divertido, constante y cercano.</p>
@@ -91,8 +91,21 @@
         <li class="cv__list--item">Tutorizado por el programa de Mentoring “Minerva” del COP-M, años 2015 y 2016.</li>
       </ul>
       <a href="#us">
-        <img class="team__arrow" src="./arrow-up-solid.svg" alt="subir" title="volver arriba" />
+        <img class="arrow" src="./arrow.svg" alt="subir" title="volver arriba" />
       </a>
     </section>
+    <script>
+      const arrow = document.querySelector('.arrow');
+      console.log(arrow.src);
+
+      const arrowappears = () => {
+        if (window.scrollY >= 25) {
+          arrow.classList.add('arrow-appear');
+        } else if (window.scrollY < 10) {
+          arrow.classList.remove('arrow-appear');
+        }
+      };
+      window.addEventListener('scroll', arrowappears);
+    </script>
   </body>
 </html>

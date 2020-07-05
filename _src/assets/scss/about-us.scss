@@ -1,5 +1,6 @@
 @import 'core/variables';
 @import 'core/reset';
+@import 'components/back-btn';
 
 .team {
   &__title {
@@ -11,18 +12,6 @@
   }
   &__emphasis {
     font-weight: bolder;
-  }
-  &__btn {
-    font-family: $textFont;
-    border-radius: 5px;
-    background-color: rgba(255, 255, 255, 0.7);
-    color: black;
-    border: solid 1px rgb(170, 164, 164);
-    padding: 10px;
-    text-decoration: none;
-    position: fixed;
-    top: 30px;
-    right: 30px;
   }
   &__text-container {
     margin: 30px;
@@ -38,15 +27,7 @@
       margin-right: 30px;
     }
   }
-  &__arrow {
-    width: 50px;
-    color: black;
-    padding: 10px;
-    text-decoration: none;
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-  }
+
   &__presentation {
     text-align: center;
     font-family: $textFont;
@@ -99,6 +80,19 @@
       margin-right: 20px;
     }
   }
+}
+.arrow {
+  display: none;
+  width: 50px;
+  color: black;
+  padding: 10px;
+  text-decoration: none;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+}
+.arrow-appear {
+  display: block;
 }
 .cv__title {
   text-align: start;

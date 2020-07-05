@@ -57,12 +57,6 @@ const therapies = [
     description: 'El ser humano se caracteriza entre otras cosas , por su capacidad de expresión artística como forma de comunicación. Cuando no llegan las palabras precisas, cuando podemos expresarnos de otra forma….nuestra capacidad de comunicación se expande.',
   },
   {
-    id: 'therapy-9',
-    title: 'Terapia ámbito laboral',
-    image: './assets/images/achive.jpg',
-    description: 'Tanto para jóvenes como para profesionales maduros, no es sencillo desempeñarse en un mundo tan competitivo. El mundo del trabajo se hace cada vez más exigente en el que debemos conocer bien nuestra profesión que se ha de ver enriquecida con conocimiento de otros ámbitos y, más que nunca, se valoran las competencias profesionales. Te ofrecemos un apoyo y orientación para que te conozcas más y mejor en el ámbito competencial, para que mejores la seguridad en ti mismo para tu desempeño profesional y que, tanto si trabajas con personas a tu cargo, como sólo o para ti; sepas alcanzar un desempeño óptimo disfrutando cada jornada laboral de lo que haces.',
-  },
-  {
     id: 'therapy-10',
     title: 'Procesos adoptivos',
     image: './assets/images/adopcion.jpg',
@@ -79,6 +73,12 @@ const therapies = [
     title: 'Talleres',
     image: './assets/images/procesos-terapia-3.jpeg',
     description: ['#Bienvenid@Todocambio.com', '#Hombres y mujeres maduros.', '#Arteterapia.', '#Valores para vivir la vida', '#Ante la soledad', '#Taller de transgresión', '#Preparación post-parto.', '#Familia funcional', '#Mentoring en competencias profesionales', '#Taller de transegresión adolescente', '#Adopción internacional'],
+  },
+  {
+    id: 'therapy-9',
+    title: 'Crecimiento en competencias profesionales y el ámbito laboral',
+    image: './assets/images/achive.jpg',
+    description: 'Tanto para jóvenes como para profesionales maduros, no es sencillo desempeñarse en un mundo tan competitivo. El mundo del trabajo se hace cada vez más exigente en el que debemos conocer bien nuestra profesión que se ha de ver enriquecida con conocimiento de otros ámbitos y, más que nunca, se valoran las competencias profesionales. Te ofrecemos un apoyo y orientación para que te conozcas más y mejor en el ámbito competencial, para que mejores la seguridad en ti mismo para tu desempeño profesional y que, tanto si trabajas con personas a tu cargo, como sólo o para ti; sepas alcanzar un desempeño óptimo disfrutando cada jornada laboral de lo que haces.',
   },
 ];
 
@@ -182,7 +182,18 @@ function attachEvents() {
     });
   });
 }
+//función para que aparezca la flecha al hacer scroll
 
+const arrow = document.querySelector('.arrow');
+
+const arrowappears = () => {
+  if (window.scrollY >= 25) {
+    arrow.classList.add('arrow-appear');
+  } else if (window.scrollY < 10) {
+    arrow.classList.remove('arrow-appear');
+  }
+};
+window.addEventListener('scroll', arrowappears);
 /* //SECCIÓN DE MÁS TERAPIAS!
 
 const addTherapyBtn = document.getElementById('add-therpies');

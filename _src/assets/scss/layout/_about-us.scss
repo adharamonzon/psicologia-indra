@@ -41,7 +41,7 @@
     }
     &__photo {
       width: 200px;
-      height: 200px;
+      height: auto;
       border-radius: 5px;
       box-shadow: 10px 10px 12px -4px rgba(153, 152, 153, 1);
       &:hover {
@@ -69,6 +69,10 @@
 }
 .link {
   color: pointer;
+}
+.manuel {
+  height: 200px;
+  width: auto;
 }
 @media all and (max-width: 980px) {
   .aboutUs--us {

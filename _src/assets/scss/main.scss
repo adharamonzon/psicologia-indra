@@ -10,6 +10,7 @@
 @import 'layout/footer';
 
 .arrow {
+  display: none;
   width: 50px;
   color: black;
   padding: 10px;
@@ -17,4 +18,7 @@
   position: fixed;
   bottom: 30px;
   right: 30px;
+}
+.arrow-appear {
+  display: block;
 }
