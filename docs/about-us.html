@@ -13,7 +13,7 @@
     
     <body>
         <section class="team">
-             <h1 class="team__title" id="us">         Sobre nosotros       </h1>  <a href="index.html#team" class="team__btn">         volver       </a> 
+             <h1 class="team__title" id="us">         Sobre nosotros       </h1>  <a href="index.html#team" class="back-btn">         volver       </a> 
             <div
             class="team__text-container">
                 <p class="team__text-container--text">Nuestra historia comienza antes del <span class="team__emphasis">año 1998 </span>año
@@ -139,7 +139,7 @@
                             </ul>
                              <h1 class="team__presentation--user" id="manuel">         Manuel A. Ruiz Ruiz       </h1> 
                             <div class="team__userContainerManuel">
-                                <img class="team__userContainerManuel--img" src="./assets/images/manuel.jpg"
+                                <img class="team__userContainerManuel--img manuel" src="./assets/images/manuel.jpg"
                                 alt="fotografía de Manuel" title="Manuel Ruiz" />
                                 <div class="team__userContainerManuel--info">
                                     <p class="team__userContainerManuel--text">Ahora voy a presentaros a Manuel. Es díficil resumir en pocas líneas la
@@ -202,8 +202,11 @@
                                                 profesionales desde 1998.</li>
                                                 <li class="cv__list--item">Tutorizado por el programa de Mentoring “Minerva” del COP-M, años 2015
                                                     y 2016.</li>
-                            </ul> <a href="#us">         <img class="team__arrow" src="./arrow-up-solid.svg" alt="subir" title="volver arriba" />       </a> 
+                            </ul> <a href="#us">         <img class="arrow" src="./arrow.svg" alt="subir" title="volver arriba" />       </a> 
         </section>
+        <script>
+            const arrow = document.querySelector('.arrow');       console.log(arrow.src);        const arrowappears = () => {         if (window.scrollY >= 25) {           arrow.classList.add('arrow-appear');         } else if (window.scrollY < 10) {           arrow.classList.remove('arrow-appear');         }       };       window.addEventListener('scroll', arrowappears);
+        </script>
     </body>
 
 </html>
