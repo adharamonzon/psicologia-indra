@@ -82,51 +82,6 @@ const therapies = [
   },
 ];
 
-//terapias secundarias
-/* const moreTherapies = [
-  {
-    id: 'therapy-4',
-    title: 'De grupo infantil',
-    image: './assets/images/children.jpg',
-    description: 'Siempre que podemos y tenemos la posibilidad de formar un grupo de menores con edades y /o características similares, os planteamos la terapia grupal como forma de avanzar en el proceso. Somos lo que somos por la relación que mantenemos con los demás. Nos formamos y educamos en un entorno social que necesitamos para nuestro crecimiento emocional. Somos en relación con un otro. Temas como habilidades sociales, enfrentamiento al estrés, solución de problemas, técnicas de relajación…son habituales en estas dinámicas.',
-  },
-  {
-    id: 'therapy-5',
-    title: 'Asistida por animales',
-    image: './assets/images/girl.jpg',
-    description: 'Los animales han formado parte de nuestro sistema de subsistencia alimentaria y defensiva desde tiempos remotos. Así también se han ido forjando un espacio de acompañamiento personal a través de la domesticación de ciertas especies. La comunicación con ellos desde lo no verbal es obvia y disfrutada por todos aquellos que tenemos en casa animales de compañía. En el ámbito terapéutico entendemos esta expresión como una técnica mas de apoyo y sostén a nuestros pacientes. uestro co-terapeuta “TUSKO” nos tuvo que dejar hace tiempo y en la actualidad se esta preparando para ello una hermosa mestiza de galgo, "Laiya", que seguro será la continuidad de esta colaboración.',
-  },
-  {
-    id: 'therapy-6',
-    title: 'Arte-terapia',
-    image: './assets/images/fantasy.jpg',
-    description: 'El ser humano se caracteriza entre otras cosas , por su capacidad de expresión artística como forma de comunicación. Cuando no llegan las palabras precisas, cuando podemos expresarnos de otra forma….nuestra capacidad de comunicación se expande.',
-  },
-  {
-    id: 'therapy-9',
-    title: 'Terapia para el ámbito laboral',
-    image: './assets/images/achive.jpg',
-    description: 'Tanto para jóvenes como para profesionales maduros, no es sencillo desempeñarse en un mundo tan competitivo. El mundo del trabajo se hace cada vez más exigente en el que debemos conocer bien nuestra profesión que se ha de ver enriquecida con conocimiento de otros ámbitos y, más que nunca, se valoran las competencias profesionales. Te ofrecemos un apoyo y orientación para que te conozcas más y mejor en el ámbito competencial, para que mejores la seguridad en ti mismo para tu desempeño profesional y que, tanto si trabajas con personas a tu cargo, como sólo o para ti; sepas alcanzar un desempeño óptimo disfrutando cada jornada laboral de lo que haces.',
-  },
-  {
-    id: 'therapy-10',
-    title: 'Procesos adoptivos',
-    image: './assets/images/adopcion.jpg',
-    description: 'Formamos parte de la lista profesional para la adopción internacional del Colegio Oficial de Psicólogos de Madrid. Desde el año 1999 hemos generado unos 190 informes destinados para la adopción internacional de menores susceptibles de ser adoptados. En el ámbito terapéutico hemos visto pasar una generación de quienes fueron menores adoptados y, a algunos de ellos y a sus familias, les hemos atendido. Tener una visión del proceso preadoptivo y postadoptivo, nos ayuda a entender las dificultades de mutua adaptación por las que pasan estas familias.',
-  },
-  {
-    id: 'therapy-11',
-    title: 'Formación',
-    image: './assets/images/conect.png',
-    description: 'Colaboramos desde hace ya diez años como docentes en dos centros de formación de Terapia Familiar Sistémica. ATENEA e ITAD. Colaborar en la formación integral de profesionales de la atención psicosocial (psicólogos, psiquiatras, trabajadores sociales y educadores sociales) nos hace sentir que aportamos un granito de arena entregando algo de lo que nuestra formación y experiencia profesional desde la intervención nos entregáis las personas que atendemos, vuestra humanidad. Nosotros la acogemos y la mostramos con términos técnicos, con herramientas diseñadas y validadas para el cambio y promovemos intervenciones profesionales desde la aceptación absoluta e incondicional de las personas y las familias.',
-  },
-  {
-    id: 'therapy-12',
-    title: 'Talleres',
-    image: './assets/images/procesos-terapia-3.jpeg',
-    description: ['#Bienvenid@Todocambio.com', '#Hombres y mujeres maduros.', '#Arteterapia.', '#Valores para vivir la vida', '#Ante la soledad', '#Taller de transgresión', '#Preparación post-parto.', '#Familia funcional', '#Mentoring en competencias profesionales', '#Taller de transegresión adolescente', '#Adopción internacional'],
-  },
-]; */
 //pintar la lista de terapias principales
 const therapyGrid = document.querySelector('.cards');
 //estructura html de cada terapia
@@ -194,67 +149,6 @@ const arrowappears = () => {
   }
 };
 window.addEventListener('scroll', arrowappears);
-/* //SECCIÓN DE MÁS TERAPIAS!
-
-const addTherapyBtn = document.getElementById('add-therpies');
-const moreTherapyList = document.querySelector('.more-therapy');
-//bucle para pintar cada tarjeta de cada terapia
-const showMoreTherapies = () => {
-  let therapiesHTML = '';
-  moreTherapies.forEach((therapy) => {
-    therapiesHTML += renderCard(therapy);
-  });
-  moreTherapyList.innerHTML = therapiesHTML;
-  //estructura de cada tarjeta en html
-  function renderCard(therapy) {
-    let codeHTML = '';
-    codeHTML += `<article data-id="${therapy.id}" class="js-more more-therapy-card">`;
-    codeHTML += `<div>`;
-    codeHTML += `<h2 class="more-therapy-card__title">${therapy.title}</h2>`;
-    codeHTML += `<img class="more-therapy-card__img" src=${therapy.image} alt="foto de ${therapy.title}" title=${therapy.title} />`;
-    codeHTML += `</div>`;
-    codeHTML += '</article>';
-    codeHTML += `<div class="modal" id="modalcontainer-more"></div>`;
-    return codeHTML;
-  }
-};
-//evento de botón para la terapia
-addTherapyBtn.addEventListener('click', showMoreTherapies);
-
-function showModalNewTherpies(id) {
-  console.log(id);
-
-  let modalItem = moreTherapyList.find((therapy) => {
-    return therapy.id === id;
-  });
-  const modal = document.getElementById('modalcontainer-more');
-
-  let modalHTML = '';
-  modalHTML += `<aside class='modal-container' id=${modalItem.id}>`;
-  modalHTML += `<span class='js-close modal__close' id="btnClose">X</span>`;
-  modalHTML += `<h2 class='modal__title'>${modalItem.title}</h2>`;
-  modalHTML += `<p class='modal__text'>${modalItem.description}</p>`;
-  modalHTML += `</aside>;`;
-  modal.innerHTML = modalHTML;
-  modal.classList.add('show');
-
-  const btnCloseModal = document.getElementById('btnClose');
-  btnCloseModal.addEventListener('click', () => {
-    const info = document.getElementById('modalcontainer');
-    info.classList.remove('show');
-  });
-}
-const newTherapies = document.querySelectorAll('.js-more');
-console.log(newTherapies);
-showModalNewTherpies(); */
-/* newTherapies.forEach((card) => {
-  card.addEventListener('click', (ev) => {
-    let id = card.attributes['data-id'].value;
-    console.log(id, ev);
-
-    showModalNewTherpies(id);
-  });
-}); */
 
 paintCards();
 
