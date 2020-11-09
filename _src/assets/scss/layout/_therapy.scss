@@ -14,6 +14,7 @@
   justify-items: center;
 }
 .card {
+  margin: auto 0;
   &__title {
     font-family: $titleFont;
     font-size: 30px;
@@ -34,11 +35,10 @@
   position: fixed;
   z-index: 999;
   padding: 15px;
-  left: 30%;
-  top: 10%;
-  width: 600px;
+  top: 5%;
+  left: 25%;
+  width: 650px;
   height: auto;
-  overflow: auto;
   background-color: white;
   box-shadow: 10px 10px 279px 147px rgba(0, 0, 0, 0.75);
   border-radius: 10px;
@@ -101,8 +101,6 @@
   .cards {
     grid-template-columns: 1fr 1fr;
   }
-}
-@media all and (max-width: 980px) {
   .card {
     align-items: center;
     &__title {
@@ -112,5 +110,10 @@
       width: 200px;
       height: 100px;
     }
+  }
+}
+@media all and (max-width: 900px) {
+  .modal {
+    left: 10%;
   }
 }

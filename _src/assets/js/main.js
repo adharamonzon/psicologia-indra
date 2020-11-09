@@ -4,14 +4,14 @@ const therapies = [
   {
     id: 'therapy-1',
     title: 'Infantil y juvenil',
-    image: './assets/images/transgeneracional.jpeg',
+    image: './assets/images/terapiainfantojuvenil.jpeg',
     description: 'Los menores presentan las mismas dificultades que los adultos, salvo que sus manifestaciones se hacen en función de los recursos y capacidades propias de su edad y de su momento evolutivo. Nuestros pequeños se ven sometidos a distintas tensiones que les hacen sentir malestar que manifiestan con conductas de desorden, agresión, desobediencia, impulsividad….tanto en casa, como en el colegio o con sus iguales. Su desarrollo personal y académico puede verse afectado si no atendemos estas señales. En ocasiones, la intervención pasa por pautas que os ayudan a los padres a resolver el problema sin la necesidad de que el niño acuda a sesiones individuales. En otras, es necesario iniciar un trabajo de evaluación y diseño de tratamiento más específico para la situación conflictiva del menor. El trabajo con los padres, formando “equipo terapéutico”,es muy importante para poder ayudarle, junto con la coordinación con el colegio u otros profesionales si también fuera necesario.',
   },
   {
     id: 'therapy-13',
     title: 'Adultos',
     image: './assets/images/adultos.jpg',
-    description: ['#Bienvenid@Todocambio.com', '#Hombres y mujeres maduros.', '#Arteterapia.', '#Valores para vivir la vida', '#Ante la soledad', '#Taller de transgresión', '#Preparación post-parto.', '#Familia funcional', '#Mentoring en competencias profesionales', '#Taller de transegresión adolescente', '#Adopción internacional'],
+    description: 'Como la imagen de nuestra portada, "hay una gota que colma el vaso" y nos empuja a tomar conciencia de la necesidad de un cambio. Desde nuestra perspectiva, y basándonos en la teoría del apego de Bolwbye, la terapia irá dirigida a redefinir nuestra narrativa original acerca de como nos contamos lo que nos pasa. Y como la gota que provoca ese caos, la terapia removerá aspectos que en un primer momento nos pueden hacer sufrir o sentir mal, para luego recuperar el equilibrio original.',
   },
   {
     id: 'therapy-2',
@@ -65,7 +65,7 @@ const therapies = [
   {
     id: 'therapy-11',
     title: 'Formación',
-    image: './assets/images/conect.png',
+    image: './assets/images/formacion.jpeg',
     description: 'Colaboramos desde hace ya diez años como docentes en dos centros de formación de Terapia Familiar Sistémica. ATENEA e ITAD. Colaborar en la formación integral de profesionales de la atención psicosocial (psicólogos, psiquiatras, trabajadores sociales y educadores sociales) nos hace sentir que aportamos un granito de arena entregando algo de lo que nuestra formación y experiencia profesional desde la intervención nos entregáis las personas que atendemos, vuestra humanidad. Nosotros la acogemos y la mostramos con términos técnicos, con herramientas diseñadas y validadas para el cambio y promovemos intervenciones profesionales desde la aceptación absoluta e incondicional de las personas y las familias.',
   },
   {
@@ -76,7 +76,7 @@ const therapies = [
   },
   {
     id: 'therapy-9',
-    title: 'Crecimiento en competencias profesionales y el ámbito laboral',
+    title: 'Competencias laborales',
     image: './assets/images/achive.jpg',
     description: 'Tanto para jóvenes como para profesionales maduros, no es sencillo desempeñarse en un mundo tan competitivo. El mundo del trabajo se hace cada vez más exigente en el que debemos conocer bien nuestra profesión que se ha de ver enriquecida con conocimiento de otros ámbitos y, más que nunca, se valoran las competencias profesionales. Te ofrecemos un apoyo y orientación para que te conozcas más y mejor en el ámbito competencial, para que mejores la seguridad en ti mismo para tu desempeño profesional y que, tanto si trabajas con personas a tu cargo, como sólo o para ti; sepas alcanzar un desempeño óptimo disfrutando cada jornada laboral de lo que haces.',
   },
